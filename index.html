@@ -118,14 +118,20 @@
                     <span class="news-content">Hui received 
                     <a href="https://braintumorcenter.ucsf.edu/research/ucsf-brain-tumor-spore" target="_blank" rel="noopener">UCSF Brain Tumor SPORE Career Enhancement Program Award</a> studying multi-modality AI-driven progression prediction for patients with GBM.</span>
                 </div>
+                <!-- Add more news items as needed -->
+                
+                <!-- Extra news (hidden by default) -->
+                <div id="more-news" hidden>
+
 
                 <div class="news-item">
                     <span class="news-date">5/6/24:</span>
                     <span class="news-content">Our LLM in-context learning study - Boosting Decoder Performance Via Dynamic Prompting from Patient Similarity Embeddings for Outcome Prediction, led by Shreyas Anil, received 
                     <a href="https://aapm.confex.com/aapm/2024am/meetingapp.cgi/Paper/11395" target="_blank" rel="noopener">AAPM 2024 Best in Physics (Therapy track) award</a>. Congrats Shreyas!</span>
                 </div>
-                <!-- Add more news items as needed -->
-                <button class="show-more-btn" id="show-more-news">Show More</button>
+                </div>
+
+<button class="show-more-btn" id="show-more-news" aria-controls="more-news" aria-expanded="false">Show More</button>
             </div>
         </div>
     </section>
@@ -293,5 +299,19 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    (() => {
+      const btn = document.getElementById('show-more-news');
+      const more = document.getElementById('more-news');
+      if (!btn || !more) return;
+      btn.addEventListener('click', () => {
+        const willShow = more.hasAttribute('hidden');
+        more.toggleAttribute('hidden');
+        btn.textContent = willShow ? 'Show Less' : 'Show More';
+        btn.setAttribute('aria-expanded', String(willShow));
+      });
+    })();
+    </script>
+
 </body>
 </html>
