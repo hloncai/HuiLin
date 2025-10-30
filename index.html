@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Research Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Your Name</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#teaching" class="nav-link">Teaching</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Your Name</h1>
+                    <h2>Your Title</h2>
+                    <h3>Department | University</h3>
+                    
+                    <div class="bio">
+                        <p>
+                            Hi! I am a [Your Position] in [Department] at [University]. 
+                            My research focuses on [research areas]. I work on [specific research topics 
+                            and applications]. My work has been published in [notable venues].
+                        </p>
+                        <p>
+                            I received my Ph.D. from [University] in [Year], and was [previous positions].
+                            I joined [Current University] in [Year]. I'm [awards, fellowships, positions].
+                        </p>
+                        <p>
+                            My research is supported by [funding sources].
+                        </p>
+                    </div>
+
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> your.email@university.edu</p>
+                        <p><strong>Office:</strong> Building Room Number</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Google Scholar</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="your-photo.jpg" alt="Your Name">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">News</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">10/25:</span>
+                    <span class="news-content">Your recent achievement or publication announcement goes here. Include links to papers or resources.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">9/25:</span>
+                    <span class="news-content">Another news item about conference presentations, awards, or new research.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">8/25:</span>
+                    <span class="news-content">Grant announcement, new collaboration, or student achievement.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">7/25:</span>
+                    <span class="news-content">Paper accepted at major conference or journal publication.</span>
+                </div>
+                <!-- Add more news items as needed -->
+                <button class="show-more-btn" id="show-more-news">Show More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            
+            <div class="pub-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journal">Journal Papers</button>
+                <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                <button class="filter-btn" data-filter="preprint">Preprints</button>
+            </div>
+
+            <div class="pub-list">
+                <div class="pub-item" data-category="journal">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Paper Title Goes Here</h3>
+                        <p class="pub-authors">Author1, Author2, <strong>Your Name</strong>, Author4</p>
+                        <p class="pub-venue">Nature/Science/Journal Name, 2025</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">Paper</a>
+                            <a href="#" class="pub-link">Code</a>
+                            <a href="#" class="pub-link">Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-category="conference">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Another Paper Title</h3>
+                        <p class="pub-authors"><strong>Your Name</strong>, Collaborator1, Collaborator2</p>
+                        <p class="pub-venue">NeurIPS/ICML/Conference 2025</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">Paper</a>
+                            <a href="#" class="pub-link">arXiv</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-category="preprint">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3>Preprint Title</h3>
+                        <p class="pub-authors">Student1, <strong>Your Name</strong></p>
+                        <p class="pub-venue">arXiv preprint, 2024</p>
+                        <div class="pub-links">
+                            <a href="#" class="pub-link">arXiv</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-footer">
+                <a href="publications.html" class="view-all-link">View All Publications →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Team</h2>
+            
+            <h3 class="team-category">Current Members</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="member1.jpg" alt="Member Name">
+                    <h4>Member Name</h4>
+                    <p>PhD Student</p>
+                    <p class="member-info">Research interests: AI, ML</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="member2.jpg" alt="Member Name">
+                    <h4>Member Name</h4>
+                    <p>Postdoc</p>
+                    <p class="member-info">Research interests: Deep Learning</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="member3.jpg" alt="Member Name">
+                    <h4>Member Name</h4>
+                    <p>MS Student</p>
+                    <p class="member-info">Research interests: Computer Vision</p>
+                </div>
+            </div>
+
+            <h3 class="team-category">Alumni</h3>
+            <div class="alumni-list">
+                <p><strong>Name</strong> (PhD 2024) → Company/Position</p>
+                <p><strong>Name</strong> (Postdoc 2023-2024) → University/Position</p>
+                <p><strong>Name</strong> (MS 2023) → Company/Position</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching">
+        <div class="container">
+            <h2 class="section-title">Teaching</h2>
+            
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Course Title (CS XXX)</h3>
+                    <p>Fall 2025 | <a href="#">Course Website</a></p>
+                    <p>Brief description of the course content and objectives.</p>
+                </div>
+                
+                <div class="course-item">
+                    <h3>Another Course (CS YYY)</h3>
+                    <p>Spring 2025 | <a href="#">Course Website</a></p>
+                    <p>Brief description of the course content and objectives.</p>
+                </div>
+                
+                <div class="course-item">
+                    <h3>Graduate Seminar (CS ZZZ)</h3>
+                    <p>Winter 2024 | <a href="#">Materials</a></p>
+                    <p>Brief description of the seminar topics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-content">
+                <div class="contact-details">
+                    <h3>Office</h3>
+                    <p>Building Name, Room XXX<br>
+                    Department of Computer Science<br>
+                    University Name<br>
+                    Street Address<br>
+                    City, State ZIP</p>
+                    
+                    <h3>Email</h3>
+                    <p>your.email@university.edu</p>
+                    
+                    <h3>Phone</h3>
+                    <p>(XXX) XXX-XXXX</p>
+                </div>
+                
+                <div class="contact-map">
+                    <!-- You can embed a Google Map here -->
+                    <div class="map-placeholder">
+                        <p>Map location</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
