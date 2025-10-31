@@ -84,26 +84,6 @@ filterButtons.forEach(button => {
 const showMoreNewsBtn = document.getElementById('show-more-news');
 let newsExpanded = false;
 
-// Add more news items dynamically (you can modify this with your actual data)
-const additionalNews = [
-    {
-        date: '6/25:',
-        content: 'Additional news item that was hidden initially.'
-    },
-    {
-        date: '5/25:',
-        content: 'Another hidden news item with important updates.'
-    },
-    {
-        date: '4/25:',
-        content: 'More news about research and achievements.'
-    },
-    {
-        date: '3/25:',
-        content: 'Earlier news item about publications and grants.'
-    }
-];
-
 if (showMoreNewsBtn) {
     showMoreNewsBtn.addEventListener('click', () => {
         const newsList = document.querySelector('.news-list');
